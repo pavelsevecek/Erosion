@@ -17,7 +17,7 @@ struct Filter {
     std::uint32_t seed = 1234;
 
     // p must be a unit sphere position; pixel_angle is the pixel size in radians.
-    float evaluate(const Vec3& p, Vec3 gradient, float height, float pixel_angle) const;
+    float evaluate(Vec3 p, Vec3 gradient, float height, float pixel_angle) const;
 };
 
 } // namespace Erosion
